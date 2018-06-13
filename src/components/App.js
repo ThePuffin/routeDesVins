@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Button from '@material-ui/core/Button';
 
 //gestion des routes
 import { Route, Link } from "react-router-dom";
@@ -16,7 +17,8 @@ class App extends Component {
         </ul>
         <h1>LA route des vins</h1>
         <p className="test">Ceci est un test</p>
-        <p> abcdefghijklmnopqrstuvwxyz</p>
+        <p color="primary"> abcdefghijklmnopqrstuvwxyz</p>
+        <Button variant="contained" color="secondary">OK</Button>
         <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
         <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />
